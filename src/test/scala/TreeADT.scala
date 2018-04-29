@@ -20,11 +20,7 @@ class TreeADT extends FunSuite {
 
   test("Double every element of example tree") {
     val tree = Branch(Branch(Leaf(1), Leaf(2)), Branch(Leaf(3), Leaf(4)))
-
-    var treePrint = ""
-
     val tree2 = Tree.map(tree)(_ * 2)
-    assert(treePrint  == "2468")
 
   }
 
