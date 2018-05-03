@@ -2,7 +2,7 @@
 
 ## 1 - Pure functions
 
-A pure functions is a function with _no side effects_ other than compute a result given its inputs.
+A pure function is a function with _no side effects_ other than compute a result given its inputs.
 
 ```scala
 def intoString(n: Int): String = "".format(n)
