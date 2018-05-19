@@ -1,4 +1,4 @@
-package higher_order_functions
+package funcprogramming.higher_order_functions
 
 import scala.annotation.tailrec
 

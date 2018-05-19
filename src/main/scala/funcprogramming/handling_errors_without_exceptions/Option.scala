@@ -1,4 +1,4 @@
-package handling_errors_without_exceptions
+package funcprogramming.handling_errors_without_exceptions
 
 sealed trait Option[+A] {
 
@@ -44,8 +44,25 @@ case object None extends Option[Nothing]
 
 object Option {
 
+  def mean(xs: Seq[Double]): Option[Double] =
+    if (xs.isEmpty) None
+    else Some(xs.sum / xs.length)
+
+  /*
+  If the mean of a sequence is m, the variance is the mean of math.pow(x-m,2) for
+  each element x in the sequence.
+   */
+  def variance(seq: Seq[Double]): Option[Double] =
+    mean(seq) flatMap(m => mean(seq.map(elem => math.pow(m - elem, 2))))
 
 
-  def variance(seq: Seq[Double]): Option[Double] = ???
 
+  /*
+  Combine two option values using a binary function. If either Option value is None,
+  then return value is too.
+   */
+  def map2[A,B,C](a: Option[A], b: Option[B]) (f: (A,B) => C): Option[C] =
+    a flatMap(aa => b map(bb => f(aa, bb)))
+
+  def sequence[A](a: List[Option[A]]): Option[List[A]] = ???
 }

@@ -1,5 +1,7 @@
-import org.scalatest.FunSuite
+package language
+
 import impatient.control_structures_and_functions.ChapterTwo._
+import org.scalatest.FunSuite
 
 class ChapterTwoTests extends FunSuite{
 

@@ -1,6 +1,7 @@
-import org.scalatest.FunSuite
-import org.scalatest.BeforeAndAfter
-import handling_errors_without_exceptions.{None, Option, Some}
+package fp
+
+import funcprogramming.handling_errors_without_exceptions.{None, Option, Some}
+import org.scalatest.{BeforeAndAfter, FunSuite}
 
 import scala.annotation.tailrec
 

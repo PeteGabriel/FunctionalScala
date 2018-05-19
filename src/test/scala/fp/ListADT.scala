@@ -1,6 +1,6 @@
-import functional_data_structures.Cons
-import functional_data_structures.Nil
-import functional_data_structures.List
+package fp
+
+import funcprogramming.functional_data_structures.{Cons, List, Nil}
 import org.scalatest.FunSuite
 
 class ListADT extends FunSuite{

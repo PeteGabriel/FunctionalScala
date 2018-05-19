@@ -1,4 +1,6 @@
-import functional_data_structures.{Branch, Leaf, Tree}
+package fp
+
+import funcprogramming.functional_data_structures.{Branch, Leaf, Tree}
 import org.scalatest.FunSuite
 
 class TreeADT extends FunSuite {

@@ -1,8 +1,7 @@
+package fp
+
+import funcprogramming.higher_order_functions.HigherOrderFunction.{factorial, fib, findFirst, isSorted}
 import org.scalatest.FunSuite
-import higher_order_functions.HigherOrderFunction.factorial
-import higher_order_functions.HigherOrderFunction.fib
-import higher_order_functions.HigherOrderFunction.findFirst
-import higher_order_functions.HigherOrderFunction.isSorted
 
 class HigherOrderTests extends FunSuite {
 

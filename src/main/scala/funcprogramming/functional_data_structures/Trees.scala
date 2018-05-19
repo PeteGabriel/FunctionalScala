@@ -1,4 +1,4 @@
-package functional_data_structures
+package funcprogramming.functional_data_structures
 
 sealed trait Tree[+A]
 case class Leaf[A](value:A) extends Tree[A]
